@@ -29,9 +29,15 @@ chaque implémentation que nous souhaitions au démarrage du projet.
 javac -cp .\lib\*; .\webapps\chat\WEB-INF\classes\*.java .\webapps\chat\WEBINF\classes\pojos\*.java .\webapps\chat\WEB-INF\classes\util\*.java
 # LINUX :
 javac -encoding ISO-8859-1 -cp './lib/*:' ./webapps/chat/WEB-INF/classes/*.java ./webapps/chat/WEB-INF/classes/pojos/*.java ./webapps/chat/WEB-INF/classes/util/*.java
+
 Dans /lib : java -jar h2-1.4.199.jar
+
 Dans la base jdbc:h2:~/chat -> utilisateur : « sa » mot de passe : « »
+
 Create table users(LOGIN VARCHAR, SALT NVARCHAR(45),MDP NVARCHAR(45)) ;
+
 Dans /bin : chmod u+x catalina.sh 
+
 ./catalina.sh run
+
 Dans un navigateur web : localhost :8080/chat/login.html
