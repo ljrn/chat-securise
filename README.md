@@ -24,10 +24,10 @@ Nous aurions aimé avoir un auto-refresh de la page lorsqu’un message est reç
 n’avons pas réussi à implémenter cette fonctionnalité. Outre cela, nous avons mené à bout
 chaque implémentation que nous souhaitions au démarrage du projet.
 ## Mode d’emploi :
-#À la racine du projet :
-#WINDOWS :
+# À la racine du projet :
+# WINDOWS :
 javac -cp .\lib\*; .\webapps\chat\WEB-INF\classes\*.java .\webapps\chat\WEBINF\classes\pojos\*.java .\webapps\chat\WEB-INF\classes\util\*.java
-#LINUX :
+# LINUX :
 javac -encoding ISO-8859-1 -cp './lib/*:' ./webapps/chat/WEB-INF/classes/*.java ./webapps/chat/WEB-INF/classes/pojos/*.java ./webapps/chat/WEB-INF/classes/util/*.java
 Dans /lib : java -jar h2-1.4.199.jar
 Dans la base jdbc:h2:~/chat -> utilisateur : « sa » mot de passe : « »
