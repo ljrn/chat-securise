@@ -1,12 +1,12 @@
-## CHAT SECURISE
-# Membres du groupe :
+### CHAT SECURISE
+## Membres du groupe :
 - Baptiste MOMUT : baptiste.momut.etu@univ-lille.fr
 - Louis JERONIMO : louis.jeronimo.etu@univ-lille.fr
-# Description du projet :
+## Description du projet :
 Notre chat sécurisé est un chat de groupe, c’est-à-dire que tout le monde communique dans
 le même groupe. Chaque personne voulant communiquer doit être authentifiée dans la base
 de données h2 associée.
-# Compte rendu :
+## Compte rendu :
 Les principales difficultés que nous avons rencontrées sont des problèmes avec le
 chiffrement et le déchiffrement RSA qui étaient finalement dus à une mauvaise utilisation
 des méthodes développées. De plus nous avons mis du temps à développer le mécanisme
@@ -23,16 +23,15 @@ Etat d’avancement :
 Nous aurions aimé avoir un auto-refresh de la page lorsqu’un message est reçu mais nous
 n’avons pas réussi à implémenter cette fonctionnalité. Outre cela, nous avons mené à bout
 chaque implémentation que nous souhaitions au démarrage du projet.
-# Mode d’emploi :
-À la racine du projet :
-WINDOWS :
+## Mode d’emploi :
+#À la racine du projet :
+#WINDOWS :
 javac -cp .\lib\*; .\webapps\chat\WEB-INF\classes\*.java .\webapps\chat\WEBINF\classes\pojos\*.java .\webapps\chat\WEB-INF\classes\util\*.java
-LINUX
-javac -encoding ISO-8859-1 -cp './lib/*:' ./webapps/chat/WEB-INF/classes/*.java
-./webapps/chat/WEB-INF/classes/pojos/*.java ./webapps/chat/WEB-INF/classes/util/*.java
+#LINUX :
+javac -encoding ISO-8859-1 -cp './lib/*:' ./webapps/chat/WEB-INF/classes/*.java ./webapps/chat/WEB-INF/classes/pojos/*.java ./webapps/chat/WEB-INF/classes/util/*.java
 Dans /lib : java -jar h2-1.4.199.jar
 Dans la base jdbc:h2:~/chat -> utilisateur : « sa » mot de passe : « »
 Create table users(LOGIN VARCHAR, SALT NVARCHAR(45),MDP NVARCHAR(45)) ;
-Dans /bin : chmod u+x catalina.sh
+Dans /bin : chmod u+x catalina.sh 
 ./catalina.sh run
 Dans un navigateur web : localhost :8080/chat/login.html
